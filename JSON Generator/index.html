@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JSON Generator</title>
+		<script src="index.js"></script>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div id="resaBloc">
+			<h1>Reservation generator</h1>
+			<div id="resaContent">
+				<input type="email" name="resaMail" id="resaMail" placeholder="Mail" />
+				<input type="datetime-local" name="resaDate" id="resaDate" placeholder="Mail" />
+				<input type="number" name="resaNbPeople" id="resaNbPeople" placeholder="Nb of people" />
+				<button class="validateBtn" onclick="generateResa()">Generate</button>
+			</div>
+		</div>
+		<div id="commandBloc">
+			<h1>Command generator</h1>
+			<div id="commandContent">
+				<div id="commandRow">
+					<div id="tableBloc">
+						<span>Table</span>
+						<div id="tableBtn">
+							<button onclick="selectTable(this, 1)">1</button>
+							<button onclick="selectTable(this, 2)">2</button>
+							<button onclick="selectTable(this, 3)">3</button>
+							<button onclick="selectTable(this, 4)">4</button>
+						</div>
+					</div>
+					<div id="reservedBloc">
+						<span>Is reserved</span>
+						<div id="reservedContent">
+							<input
+								onchange="toogleReserved(false)"
+								type="radio"
+								name="reserved"
+								id="No"
+								checked
+							/>
+							<label for="reserved">No</label>
+							<input onchange="toogleReserved(true)" type="radio" name="reserved" id="yes" />
+							<label for="reserved">yes</label>
+							<input type="email" name="reservedMail" id="reservedMail" placeholder="Mail" />
+						</div>
+					</div>
+
+					<div id="nbPeopleBloc">
+						<span>Nb of people</span>
+						<div id="nbPeopleBtn">
+							<button onclick="selectNbPeople(this, 1)">1</button>
+							<button onclick="selectNbPeople(this, 2)">2</button>
+							<button onclick="selectNbPeople(this, 3)">3</button>
+							<button onclick="selectNbPeople(this, 4)">4</button>
+							<button onclick="selectNbPeople(this, 5)">5</button>
+							<button onclick="selectNbPeople(this, 6)">6</button>
+							<button onclick="selectNbPeople(this, 7)">7</button>
+							<button onclick="selectNbPeople(this, 8)">8</button>
+						</div>
+					</div>
+				</div>
+
+				<h3 id="titleMeal">Meals <span onclick="showMeals()">+</span></h3>
+				<div id="meals"></div>
+				<div id="mealsBlocToClone" class="hidden">
+					<div class="mealChoice">
+						<div onclick="showMeal(this, 'PiBD')" id="PiBD"><span>PiBD</span></div>
+						<div onclick="showMeal(this, 'PiB')" id="PiB"><span>PiB</span></div>
+						<div onclick="showMeal(this, 'PaB')" id="PaB"><span>PaB</span></div>
+						<div onclick="showMeal(this, 'PaBD')" id="PaBD"><span>PaBD</span></div>
+						<div onclick="showMeal(this, 'SBD')" id="SBD"><span>SBD</span></div>
+						<div onclick="showMeal(this, 'SB')" id="SB"><span>SB</span></div>
+					</div>
+					<div class="product pizzas hidden">
+						<div>Pizzas</div>
+						<span onclick="selectDishInMeal(this, 'Margherita')">Margherita</span>
+						<span onclick="selectDishInMeal(this, 'Quatro Stagioni')">Quatro Stagioni</span>
+					</div>
+					<div class="product pastas hidden">
+						<div>Pastas</div>
+						<span onclick="selectDishInMeal(this, 'Spaghetti alle vongole')"
+							>Spaghetti alle vongole</span
+						>
+					</div>
+					<div class="product secondi hidden">
+						<div>Secondi</div>
+						<span onclick="selectDishInMeal(this, 'Scaloppina alla milanese')">
+							Scaloppina alla milanese
+						</span>
+					</div>
+					<div class="product drinks hidden">
+						<div>Drinks</div>
+						<span onclick="selectDrinkInMeal(this,'Acqua naturale')">Acqua naturale</span>
+						<span onclick="selectDrinkInMeal(this,'Coca')">Coca</span>
+						<span onclick="selectDrinkInMeal(this,'Birra alla spina')">Birra alla spina</span>
+						<span onclick="selectDrinkInMeal(this,'Moretti')">Moretti</span>
+					</div>
+					<div class="product dessert hidden">
+						<div>Dessert</div>
+						<span onclick="selectDessertInMeal(this,'Tiramisu')">Tiramisu</span>
+						<span onclick="selectDessertInMeal(this,'Pannacotta')">Pannacotta</span>
+						<span onclick="selectDessertInMeal(this,'Maxibon')">Maxibon</span>
+						<span onclick="selectDessertInMeal(this,'Biscotto')">Biscotto</span>
+					</div>
+					<button class="validateBtn" onclick="validateMeal()">Validate meal</button>
+				</div>
+				<div id="singleProducts">
+					<h3>Single products</h3>
+					<div class="product pizzas">
+						<div>Pizzas</div>
+						<span onclick="selectSingleProduct('Margherita')">Margherita</span>
+						<span onclick="selectSingleProduct('Quatro Stagioni')">Quatro Stagioni</span>
+					</div>
+					<div class="product pastas">
+						<div>Pastas</div>
+						<span onclick="selectSingleProduct('Spaghetti alle vongole')">
+							Spaghetti alle vongole
+						</span>
+					</div>
+					<div class="product secondi">
+						<div>Secondi</div>
+						<span onclick="selectSingleProduct('Scaloppina alla milanese')">
+							Scaloppina alla milanese
+						</span>
+					</div>
+					<div class="product drinks">
+						<div>Drinks</div>
+						<span onclick="selectSingleProduct('Acqua naturale')">Acqua naturale</span>
+						<span onclick="selectSingleProduct('Coca')">Coca</span>
+						<span onclick="selectSingleProduct('Birra alla spina')">Birra alla spina</span>
+						<span onclick="selectSingleProduct('Moretti')">Moretti</span>
+					</div>
+					<div class="product dessert">
+						<div>Dessert</div>
+						<span onclick="selectSingleProduct('Tiramisu')">Tiramisu</span>
+						<span onclick="selectSingleProduct('Pannacotta')">Pannacotta</span>
+						<span onclick="selectSingleProduct('Maxibon')">Maxibon</span>
+						<span onclick="selectSingleProduct('Biscotto')">Biscotto</span>
+					</div>
+				</div>
+				<button class="validateBtn" onclick="generateCommand()">Generate</button>
+			</div>
+		</div>
+	</body>
+</html>

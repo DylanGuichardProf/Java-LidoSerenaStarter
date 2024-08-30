@@ -1,0 +1,26 @@
+{
+	"tabNum": 1,
+	"date": "08/10/2024 19:30",
+	"reserved": true,
+	"reservationMail": "dylan@dylan.com",
+	"nbOfPeople": 3,
+	"meals": [
+		{
+			"code": "PiBD",
+			"choice": {
+				"dish": "Margherita",
+				"drink": "Coca",
+				"dessert": "Tiramisu"
+			}
+		},
+		{
+			"code": "SBD",
+			"choice": {
+				"dish": "Scaloppina alla milanese",
+				"drink": "Birra alla spina",
+				"dessert": "Maxibon"
+			}
+		}
+	],
+	"singleProducts": ["Spaghetti alle vongole", "Acqua naturale", "Moretti"]
+}

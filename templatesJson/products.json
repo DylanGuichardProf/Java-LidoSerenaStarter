@@ -1,0 +1,133 @@
+{
+	"dishes": [
+		{
+			"name": "Margherita",
+			"price": 5,
+			"type": "Pizza"
+		},
+		{
+			"name": "Quatro Stagioni",
+			"price": 7,
+			"type": "Pizza"
+		},
+		{
+			"name": "Spaghetti alle vongole",
+			"price": 12,
+			"type": "Pasta"
+		},
+		{
+			"name": "Scaloppina alla milanese",
+			"price": 16,
+			"type": "Secondi"
+		}
+	],
+	"desserts": [
+		{
+			"name": "Tiramisu",
+			"price": 5,
+			"type": "Classico"
+		},
+		{
+			"name": "Pannacotta",
+			"price": 3,
+			"type": "Classico"
+		},
+		{
+			"name": "Maxibon",
+			"price": 3,
+			"type": "Gelato"
+		},
+		{
+			"name": "Biscotto",
+			"price": 2,
+			"type": "Gelato"
+		}
+	],
+	"drinks": [
+		{
+			"name": "Acqua naturale",
+			"price": 1,
+			"alcool": false
+		},
+		{
+			"name": "Coca",
+			"price": 2,
+			"alcool": false
+		},
+		{
+			"name": "Birra alla spina",
+			"price": 4,
+			"alcool": true
+		},
+		{
+			"name": "Moretti",
+			"price": 3,
+			"alcool": true
+		}
+	],
+	"meals": [
+		{
+			"name": "Pizza + drink + dessert",
+			"code": "PiBD",
+			"price": 10,
+			"choice": {
+				"dish": "",
+				"drink": "",
+				"dessert": ""
+			},
+			"supplement": 0
+		},
+		{
+			"name": "Pizza + drink",
+			"code": "PiB",
+			"price": 8,
+			"choice": {
+				"dish": "",
+				"drink": ""
+			},
+			"supplement": 0
+		},
+		{
+			"name": "Pasta + drink",
+			"code": "PaB",
+			"price": 10,
+			"choice": {
+				"dish": "",
+				"drink": ""
+			},
+			"supplement": 0
+		},
+		{
+			"name": "Pasta + drink + dessert",
+			"code": "PaBD",
+			"price": 12,
+			"choice": {
+				"dish": "",
+				"drink": "",
+				"dessert": ""
+			},
+			"supplement": 0
+		},
+		{
+			"name": "Secondi + drink + dessert",
+			"code": "SBD",
+			"price": 20,
+			"choice": {
+				"dish": "",
+				"drink": "",
+				"dessert": ""
+			},
+			"supplement": 0
+		},
+		{
+			"name": "Secondi + drink",
+			"code": "SB",
+			"price": 20,
+			"choice": {
+				"dish": "",
+				"drink": ""
+			},
+			"supplement": 0
+		}
+	]
+}
