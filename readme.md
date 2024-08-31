@@ -96,6 +96,8 @@ Pour rendre votre code plus lisible n'hésitez pas à utiliser une ou plusieurs 
 
 Les types de plats et de dessert devront être des *enum* pour éviter les erreurs.
 
+Pour générer les stats (et ainsi vérifier que les JSON que vous avez générer sont bon) déposez le fichier *payments.json* dans le dossier payements du front.
+
 # Etapes (conséillées)
 - Afficher un message à l'utilisateur
 - Pouvoir lire ce que l'utilisateur saisie

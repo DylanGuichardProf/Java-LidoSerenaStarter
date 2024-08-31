@@ -1,0 +1,21 @@
+.pieChart {
+	text-align: center;
+	width: 30%;
+}
+
+#productsBuyBloc,
+#row2 {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	gap: 5%;
+	border-bottom: 5px solid #333;
+}
+
+#row2 > div {
+	width: 30%;
+	text-align: center;
+}
+#row2 > div h4 {
+	font-size: 2em;
+}

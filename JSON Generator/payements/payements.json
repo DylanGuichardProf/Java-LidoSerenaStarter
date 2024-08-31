@@ -1,0 +1,155 @@
+{
+	"30/08/2024": [
+		{
+			"reserved": false,
+			"totalPrice": 33.0,
+			"singleProducts": [{ "price": 3.0, "name": "Pannacotta", "type": "CLASSICO" }],
+			"tabNum": 1,
+			"reservationMail": "",
+			"nbOfPeople": 2,
+			"meals": [
+				{
+					"code": "PiBD",
+					"dessert": { "price": 3.0, "name": "Maxibon", "type": "GELATO" },
+					"dish": { "price": 5.0, "name": "Margherita", "type": "PIZZA" },
+					"price": 10.0,
+					"supplement": 0,
+					"name": "Pizza + drink + dessert",
+					"drink": { "alcool": true, "price": 4.0, "name": "Birra alla spina" }
+				},
+				{
+					"code": "SB",
+					"dish": { "price": 16.0, "name": "Scaloppina alla milanese", "type": "SECONDI" },
+					"price": 20.0,
+					"supplement": 0,
+					"name": "Secondi + drink",
+					"drink": { "alcool": false, "price": 1.0, "name": "Acqua naturale" }
+				}
+			]
+		},
+		{
+			"reserved": true,
+			"totalPrice": 28.0,
+			"singleProducts": [
+				{ "price": 5.0, "name": "Tiramisu", "type": "CLASSICO" },
+				{ "price": 2.0, "name": "Biscotto", "type": "GELATO" },
+				{ "alcool": false, "price": 1.0, "name": "Acqua naturale" }
+			],
+			"tabNum": 2,
+			"reservationMail": "doubadou",
+			"nbOfPeople": 3,
+			"meals": [
+				{
+					"code": "PaBD",
+					"dessert": { "price": 2.0, "name": "Biscotto", "type": "GELATO" },
+					"dish": { "price": 12.0, "name": "Spaghetti alle vongole", "type": "PASTA" },
+					"price": 12.0,
+					"supplement": 0,
+					"name": "Pasta + drink + dessert",
+					"drink": { "alcool": true, "price": 4.0, "name": "Birra alla spina" }
+				},
+				{
+					"code": "PiB",
+					"dish": { "price": 7.0, "name": "Quatro Stagioni", "type": "PIZZA" },
+					"price": 8.0,
+					"supplement": 0,
+					"name": "Pizza + drink",
+					"drink": { "alcool": false, "price": 2.0, "name": "Coca" }
+				}
+			]
+		},
+		{
+			"reserved": true,
+			"totalPrice": 33.0,
+			"singleProducts": [{ "price": 3.0, "name": "Maxibon", "type": "GELATO" }],
+			"tabNum": 2,
+			"reservationMail": "mmmm",
+			"nbOfPeople": 3,
+			"meals": [
+				{
+					"code": "PiBD",
+					"dessert": { "price": 2.0, "name": "Biscotto", "type": "GELATO" },
+					"dish": { "price": 5.0, "name": "Margherita", "type": "PIZZA" },
+					"price": 10.0,
+					"supplement": 0,
+					"name": "Pizza + drink + dessert",
+					"drink": { "alcool": true, "price": 3.0, "name": "Moretti" }
+				},
+				{
+					"code": "SB",
+					"dish": { "price": 16.0, "name": "Scaloppina alla milanese", "type": "SECONDI" },
+					"price": 20.0,
+					"supplement": 0,
+					"name": "Secondi + drink",
+					"drink": { "alcool": false, "price": 2.0, "name": "Coca" }
+				}
+			]
+		}
+	],
+	"08/10/2024": [
+		{
+			"reserved": true,
+			"totalPrice": 48.0,
+			"singleProducts": [
+				{ "price": 12.0, "name": "Spaghetti alle vongole", "type": "PASTA" },
+				{ "alcool": false, "price": 1.0, "name": "Acqua naturale" },
+				{ "alcool": true, "price": 3.0, "name": "Moretti" }
+			],
+			"tabNum": 1,
+			"reservationMail": "dylan@dylan.com",
+			"nbOfPeople": 3,
+			"meals": [
+				{
+					"code": "PiBD",
+					"dessert": { "price": 5.0, "name": "Tiramisu", "type": "CLASSICO" },
+					"dish": { "price": 5.0, "name": "Margherita", "type": "PIZZA" },
+					"price": 10.0,
+					"supplement": 0,
+					"name": "Pizza + drink + dessert",
+					"drink": { "alcool": false, "price": 2.0, "name": "Coca" }
+				},
+				{
+					"code": "SBD",
+					"dessert": { "price": 3.0, "name": "Maxibon", "type": "GELATO" },
+					"dish": { "price": 16.0, "name": "Scaloppina alla milanese", "type": "SECONDI" },
+					"price": 20.0,
+					"supplement": 2,
+					"name": "Secondi + drink + dessert",
+					"drink": { "alcool": true, "price": 4.0, "name": "Birra alla spina" }
+				}
+			]
+		},
+		{
+			"reserved": true,
+			"totalPrice": 48.0,
+			"singleProducts": [
+				{ "price": 12.0, "name": "Spaghetti alle vongole", "type": "PASTA" },
+				{ "alcool": false, "price": 1.0, "name": "Acqua naturale" },
+				{ "alcool": true, "price": 3.0, "name": "Moretti" }
+			],
+			"tabNum": 1,
+			"reservationMail": "dylan@dylan.com",
+			"nbOfPeople": 3,
+			"meals": [
+				{
+					"code": "PiBD",
+					"dessert": { "price": 5.0, "name": "Tiramisu", "type": "CLASSICO" },
+					"dish": { "price": 5.0, "name": "Margherita", "type": "PIZZA" },
+					"price": 10.0,
+					"supplement": 0,
+					"name": "Pizza + drink + dessert",
+					"drink": { "alcool": false, "price": 2.0, "name": "Coca" }
+				},
+				{
+					"code": "SBD",
+					"dessert": { "price": 3.0, "name": "Maxibon", "type": "GELATO" },
+					"dish": { "price": 16.0, "name": "Scaloppina alla milanese", "type": "SECONDI" },
+					"price": 20.0,
+					"supplement": 2,
+					"name": "Secondi + drink + dessert",
+					"drink": { "alcool": true, "price": 4.0, "name": "Birra alla spina" }
+				}
+			]
+		}
+	]
+}

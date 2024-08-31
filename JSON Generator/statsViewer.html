@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Stat viewer for Java - Lido Serena Project</title>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="stats.js"></script>
+		<link rel="stylesheet" href="stats.css" />
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body onload="importPayements()">
+		<div id="productsBuyBloc">
+			<div class="pieChart">
+				<h3>Dishes</h3>
+				<canvas id="dishesChart"></canvas>
+			</div>
+			<div class="pieChart">
+				<h3>Drinks</h3>
+				<canvas id="drinksChart"></canvas>
+			</div>
+			<div class="pieChart">
+				<h3>Desserts</h3>
+				<canvas id="dessertsChart"></canvas>
+			</div>
+		</div>
+		<div id="row2">
+			<div id="nbTable">
+				<h3>Nombre de table</h3>
+				<h4></h4>
+			</div>
+			<div id="totalRevenue">
+				<h3>Addition moyenne d'une table</h3>
+				<h4></h4>
+			</div>
+			<div id="averageBill">
+				<h3>Addition moyenne d'une table</h3>
+				<h4></h4>
+			</div>
+		</div>
+	</body>
+</html>
