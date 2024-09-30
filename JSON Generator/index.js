@@ -151,5 +151,5 @@ function selectSingleProduct(name) {
 function generateCommand() {
   command.reservationMail = document.querySelector("#reservedMail").value;
   command.date = formatDate(new Date());
-  downloadJSON(command, "command");
+  downloadJSON(command, command.tabNum.toString());
 }
